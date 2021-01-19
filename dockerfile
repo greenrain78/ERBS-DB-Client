@@ -7,4 +7,4 @@ WORKDIR /erbs
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "/discord/main.py"]
+CMD ["python", "/erbs/main.py"]
