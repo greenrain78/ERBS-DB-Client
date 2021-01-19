@@ -3,7 +3,7 @@ FROM python:3.7
 RUN mkdir /erbs
 
 COPY requirements.txt /erbs
-WORKDIR /discord
+WORKDIR /erbs
 
 RUN pip install -r requirements.txt
 
