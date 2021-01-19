@@ -1,0 +1,164 @@
+[
+    {
+      "seasonId": 0,
+      "userNum": 105103,
+      "matchingMode": 2,
+      "matchingTeamMode": 1,
+      "mmr": 558,
+      "nickname": "greenrain",
+      "rank": 27868,
+      "rankSize": 418081,
+      "totalGames": 123,
+      "totalWins": 6,
+      "rankPercent": 0.07,
+      "averageRank": 10.24,
+      "averageKills": 1.28,
+      "averageAssistants": 0,
+      "averageHunts": 8.83,
+      "top1": 0.05,
+      "top2": 0.07,
+      "top3": 0.14,
+      "top5": 0.22,
+      "top7": 0.33,
+      "characterStats": [
+        {
+          "characterCode": 2,
+          "totalGames": 103,
+          "usages": 103,
+          "maxKillings": 7,
+          "top3": 14,
+          "wins": 4,
+          "top3Rate": 0,
+          "averageRank": 8
+        },
+        {
+          "characterCode": 19,
+          "totalGames": 12,
+          "usages": 12,
+          "maxKillings": 8,
+          "top3": 3,
+          "wins": 0,
+          "top3Rate": 0,
+          "averageRank": 0
+        },
+        {
+          "characterCode": 13,
+          "totalGames": 8,
+          "usages": 8,
+          "maxKillings": 2,
+          "top3": 0,
+          "wins": 0,
+          "top3Rate": 0,
+          "averageRank": 0
+        }
+      ]
+    },
+    {
+      "seasonId": 0,
+      "userNum": 105103,
+      "matchingMode": 2,
+      "matchingTeamMode": 2,
+      "mmr": 189,
+      "nickname": "greenrain",
+      "rank": 87227,
+      "rankSize": 174100,
+      "totalGames": 15,
+      "totalWins": 1,
+      "rankPercent": 0.5,
+      "averageRank": 5.27,
+      "averageKills": 0.13,
+      "averageAssistants": 0.4,
+      "averageHunts": 8.13,
+      "top1": 0.07,
+      "top2": 0.27,
+      "top3": 0.33,
+      "top5": 0.6,
+      "top7": 0.67,
+      "characterStats": [
+        {
+          "characterCode": 13,
+          "totalGames": 8,
+          "usages": 8,
+          "maxKillings": 1,
+          "top3": 3,
+          "top3Rate": 0,
+          "averageRank": 0,
+          "wins": 0
+        },
+        {
+          "characterCode": 2,
+          "totalGames": 3,
+          "usages": 3,
+          "maxKillings": 0,
+          "top3": 0,
+          "top3Rate": 0,
+          "averageRank": 0,
+          "wins": 0
+        },
+        {
+          "characterCode": 19,
+          "totalGames": 3,
+          "usages": 3,
+          "maxKillings": 0,
+          "top3": 2,
+          "top3Rate": 1,
+          "averageRank": 0,
+          "wins": 0
+        }
+      ]
+    },
+    {
+      "seasonId": 0,
+      "userNum": 105103,
+      "matchingMode": 2,
+      "matchingTeamMode": 3,
+      "mmr": 592,
+      "nickname": "greenrain",
+      "rank": 53600,
+      "rankSize": 340545,
+      "totalGames": 52,
+      "totalWins": 11,
+      "rankPercent": 0.16,
+      "averageRank": 3.35,
+      "averageKills": 1.12,
+      "averageAssistants": 1.67,
+      "averageHunts": 8.83,
+      "top1": 0.21,
+      "top2": 0.38,
+      "top3": 0.56,
+      "top5": 0.83,
+      "top7": 1,
+      "characterStats": [
+        {
+          "characterCode": 2,
+          "totalGames": 35,
+          "usages": 35,
+          "maxKillings": 7,
+          "top3": 20,
+          "wins": 5,
+          "top3Rate": 1,
+          "averageRank": 2
+        },
+        {
+          "characterCode": 13,
+          "totalGames": 13,
+          "usages": 13,
+          "maxKillings": 2,
+          "top3": 7,
+          "wins": 0,
+          "top3Rate": 1,
+          "averageRank": 1
+        },
+        {
+          "characterCode": 19,
+          "totalGames": 4,
+          "usages": 4,
+          "maxKillings": 1,
+          "top3": 2,
+          "wins": 1,
+          "top3Rate": 0,
+          "averageRank": 2
+        }
+      ]
+    }
+  ]
