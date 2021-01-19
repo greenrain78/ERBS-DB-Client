@@ -1,10 +1,12 @@
-from Log.infoLog import logger as log
-from api_client import APIClient
-from token import erbs_api_key, erbs_api_version
+from time import sleep
 
-api_key = erbs_api_key
-version = erbs_api_version
+from Log.infoLog import logger as log
+import MainScheduler
 
 if __name__ == '__main__':
-    erbsAPI = APIClient(api_key=api_key, version=version)
+    log.info('run __main__')
+    MainScheduler.start()
 
+    while True:
+        print("Running main process...............")
+        sleep(10)

@@ -1,11 +1,12 @@
 import mysql.connector
 from DB.DBLog import getLogger
+from ERBS_token import mariaDB_password, mariaDB_ID
 
 log = getLogger()
 
 config = {
-    'user': 'greenrain',
-    'password': 'Prosto1449@db',
+    'user': mariaDB_ID,
+    'password': mariaDB_password,
     'host': '192.168.219.107',
     'database': 'ERBS_DB',
     'port': '5306'

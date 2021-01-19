@@ -25,7 +25,7 @@ handler = logging.handlers.TimedRotatingFileHandler(
 handler.suffix = '%Y-%m-%d_%H-%M'  # 로그 파일명 날짜 기록 부분 포맷 지정
 
 # 포맷 지정
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d-%(funcName)s] %(message)s')
 handler.setFormatter(formatter)  # 핸들러에 로깅 포맷 할당
 
 # 핸들러 추가

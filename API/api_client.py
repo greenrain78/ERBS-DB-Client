@@ -5,7 +5,6 @@ import requests
 
 
 class APIClient(object):
-
     BASE_URL = 'https://open-api.bser.io'
     api_key: Optional[str] = None
     version: Optional[str] = None
@@ -49,6 +48,18 @@ class APIClient(object):
             raise ValueError(json_resp.get('message', 'API Error'))
 
         return json_resp.get("userGames", [])
+
+    async def fetch_user_games_next(self, user_number: int, next) -> Dict[str, list]:
+        if next is None:
+            url = f'{self.api_url}/user/games/{user_number}'
+        else:
+            url = f'{self.api_url}/user/games/{user_number}?next={next}'
+        response = requests.get(url, headers=self.header_data)
+        json_resp = response.json()
+        if response.status_code != 200:
+            raise ValueError(json_resp.get('message', 'API Error'))
+        result = {'games': json_resp.get("userGames", []), 'next': json_resp.get("next", [])}
+        return result
 
     async def fetch_user_stats(self,
                                user_number: Optional[int],
