@@ -20,16 +20,16 @@ logger = logging.getLogger('log')  # 로거 이름: log
 logger.setLevel(logging.DEBUG)  # 로깅 수준: DEBUG
 
 # 핸들러 생성
-handler = logging.handlers.TimedRotatingFileHandler(
+file_handler = logging.handlers.TimedRotatingFileHandler(
     filename=FILENAME, when='midnight', interval=1, encoding='utf-8')
-handler.suffix = '%Y-%m-%d_%H-%M'  # 로그 파일명 날짜 기록 부분 포맷 지정
+file_handler.suffix = '%Y-%m-%d_%H-%M'  # 로그 파일명 날짜 기록 부분 포맷 지정
 
 # 포맷 지정
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d-%(funcName)s] %(message)s')
-handler.setFormatter(formatter)  # 핸들러에 로깅 포맷 할당
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d - %(funcName)s] %(message)s')
+file_handler.setFormatter(formatter)  # 핸들러에 로깅 포맷 할당
 
 # 핸들러 추가
-logger.addHandler(handler)
+logger.addHandler(file_handler)
 
 
 def getLogger():

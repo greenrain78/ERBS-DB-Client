@@ -12,4 +12,4 @@ if __name__ == '__main__':
     log.info('run while')
     while True:
         log.debug("Running main process...............")
-        sleep(10)
+        sleep(60*60)
