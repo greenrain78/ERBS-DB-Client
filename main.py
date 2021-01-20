@@ -8,5 +8,5 @@ if __name__ == '__main__':
     MainScheduler.start()
 
     while True:
-        print("Running main process...............")
+        log.debug("Running main process...............")
         sleep(10)
