@@ -64,8 +64,8 @@ def getGameID() -> int:
         return result[0][0]
 
 
-def checkGameID(gameID: int) -> bool:
-    sql = f"select gameId from {gamesTableName} WHERE gameId = {gameID}"
+def checkGameID(gameID: int, userNum: int) -> bool:
+    sql = f"select gameId from {gamesTableName} WHERE gameId = {gameID} AND userNum = {userNum} "
     result = getSQL(sql)
     print(result)
     if not result:

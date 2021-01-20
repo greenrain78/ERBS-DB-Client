@@ -33,7 +33,7 @@ class Engine:
             response = await self.API.fetch_user_games_next(num, next=nextNum)
             nextNum = response['next']
             for game in response['games']:
-                if DB.checkGameID(game['gameId']):
+                if DB.checkGameID(game['gameId'], game['userNum']):
                     nextNum = None
                     log.info("게임 데이터가 이미 존제: %s", game['gameId'])
                     break
