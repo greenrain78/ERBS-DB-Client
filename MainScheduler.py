@@ -11,7 +11,7 @@ engine = Engine()
 # 매일
 # @schedule.scheduled_job('cron', hour='12', id='every day check')
 # @schedule.scheduled_job('cron', args=None, second='12', id='every day check')
-@schedule.scheduled_job('cron', args=None, minutes=0, id='every day check')
+@schedule.scheduled_job('cron', minute=0, id='every day check')
 def updateGames():
     log.info('start updateGames')
     engine.updateGames()
