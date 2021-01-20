@@ -36,6 +36,7 @@ class Engine:
                 if DB.checkGameID(game['gameId']):
                     nextNum = None
                     log.info("게임 데이터가 이미 존제: %s", game['gameId'])
+                    break
                 else:
                     DB.insertGames(game)
                     log.info(game)
