@@ -50,7 +50,7 @@ class Engine:
         for name in sampleList:
             userNum = await self.API.fetch_user_nickname(name)
             DB.insert(name, userNum)
-            log.debug('user name: ', name)
+            log.debug('user name: %s', name)
 
     def initUserList(self):
         tmpList = DB.getUserList()
